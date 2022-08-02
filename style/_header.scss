@@ -1,0 +1,176 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem;
+    position: relative;
+    background-color: white;
+    .logo{
+        padding-top: 0.4rem;
+        img{
+            width: 120%;
+        }
+    }
+    .navbar{
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        .nav-header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.2rem;
+            background-color: white;
+            .close{
+                margin-top: 0.5rem;
+                margin-right: 1rem;
+                img{
+                    transition: transform 0.5s ease;
+                    &:hover{
+                        cursor: pointer;
+                        transform: rotate(90deg);
+                    }
+                }
+            }
+        }
+        .nav-menu{
+            height: 100vh;
+            padding: 2rem;
+            background-image: linear-gradient(to bottom, $DarkBlue , rgba(255,0,0,0));
+            .menu{
+                background-color: white;
+                text-align: center;
+                padding: 1.7rem;
+                border-radius: 0.3rem;
+                ul{
+                    list-style: none;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1.5rem;
+                    li{
+                        font-size: 1.2rem;
+                        color: $DarkBlue;
+                        &:hover{
+                            text-decoration: underline;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+    .hidden{
+        display: none;
+    }
+    .hamburger{
+        cursor: pointer;
+    }
+    .request{
+        display: none;
+        margin: 1rem auto;
+        padding: 1rem 1.2rem;
+        width: 180px;
+        color: white;
+        font-size: 0.9rem;
+        font-weight: 500;
+        background-image: linear-gradient(to right,#33d56e, #25b9d5);
+        border-radius: 2rem;
+        &:hover{
+            opacity: 0.9;
+            cursor: pointer;
+            filter: brightness(120%);
+        }
+    }
+}
+
+@media screen and(min-width:1000px) {
+    .header{
+        position:relative;
+        z-index: 999;
+        padding: 0rem 10rem;
+        box-shadow: 0px 1px 10px rgba(188, 188, 188, 0.261);
+        .navbar{
+            position: static;
+            width: unset;
+            height: unset;
+            .nav-header{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0rem;
+                background-color: white;
+                .logo{
+                    display: none;
+                }
+                .close{
+                    margin-top: 0.5rem;
+                    margin-right: 1rem;
+                    display: none;
+                    img{
+                        transition: transform 0.5s ease;
+                        &:hover{
+                            cursor: pointer;
+                            transform: rotate(90deg);
+                        }
+                    }
+                }
+            }
+            .nav-menu{
+                height: unset;
+                padding: 0rem;
+                background-image: unset;
+                .menu{
+                    background-color: white;
+                    text-align: center;
+                    padding: 0rem;
+                    border-radius: 0.3rem;
+                    ul{
+                        list-style: none;
+                        display: flex;
+                        flex-direction: row;
+                        gap: 2rem;
+                        li{
+                            font-size: 1rem;
+                            padding: 2rem 0rem;
+                            color: $GrayishBlue;
+                            border-bottom: 3px solid transparent;
+                            &:hover{
+                                text-decoration: unset;
+                                cursor: pointer;
+                                border-bottom: 3px solid #33d56e;
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+        .hidden{
+            display: block;
+        }
+        .hamburger{
+            cursor: pointer;
+            display: none;
+        }
+        .request{
+            text-align: center;
+            display: block;
+            margin: unset;
+            padding: 1rem 1rem;
+            width: 180px;
+            color: white;
+            font-size: 0.9rem;
+            font-weight: 500;
+            background-image: linear-gradient(to right,#33d56e, #25b9d5);
+            border-radius: 2rem;
+            &:hover{
+                opacity: 0.9;
+                cursor: pointer;
+                filter: brightness(120%);
+            }
+        }
+    }
+}

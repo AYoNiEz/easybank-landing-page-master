@@ -1,0 +1,304 @@
+
+.content{
+    .banner{
+        background-image: url(/images/bg-intro-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:0 -30px ;
+        overflow: hidden;
+        img{
+            margin-top: -127px;
+            width: 100%;
+            
+        }
+    }
+    .content-wrapper{
+        text-align: center;
+        padding-bottom: 5rem;
+        h1{
+            font-size: 2.4rem;
+            font-weight: 300;
+            color: $DarkBlue;
+    
+        }
+        p{
+            font-size: 0.9rem;
+            color: $GrayishBlue;
+            line-height: 1.6rem;
+            padding: 1rem 1.5rem;
+            font-weight: 400;
+        }
+        .request{
+            margin: 1rem auto;
+            padding: 1rem 1.2rem;
+            width: 180px;
+            color: white;
+            font-size: 0.9rem;
+            font-weight: 500;
+            background-image: linear-gradient(to right,#33d56e, #25b9d5);
+            border-radius: 2rem;
+            &:hover{
+                opacity: 0.9;
+                cursor: pointer;
+                filter: brightness(120%);
+            }
+        }
+    }
+    
+}
+.box1{
+    padding: 5rem 1rem 1rem;
+    text-align: center;
+    background-color: #f4f5f7;
+    .why-choose{
+        h2{
+            font-size: 2rem;
+            font-weight: 300;
+            color: $DarkBlue;
+        }
+        p{
+            font-size: 0.9rem;
+            color: $GrayishBlue;
+            line-height: 1.6rem;
+            padding: 1rem 0.5rem;
+            font-weight: 400;
+        }
+    }
+    .feature{
+        margin: 2rem 0rem;
+        .inner-box{
+            padding: 0.5rem 0rem;
+            img{
+                margin-bottom: 1rem;
+            }
+            .title{
+                font-size: 1.2rem;
+                font-weight: 300;
+                color: $DarkBlue;
+            }
+            p{
+                font-size: 0.9rem;
+                color: $GrayishBlue;
+                line-height: 1.6rem;
+                padding: 1rem 0.4rem;
+                font-weight: 400;
+            }
+        }
+    }
+}
+.article{
+    padding: 5rem 1.5rem;
+    text-align: center;
+    h2{
+        font-size: 2rem;
+        font-weight: 300;
+        color: $DarkBlue;
+        margin: 0 auto;
+    }
+    img{
+        border-top-left-radius: 0.3rem;
+        border-top-right-radius: 0.3rem;
+        width: 100%;
+    }
+    .article-box{
+        
+        text-align: start;
+        margin: 2rem 0rem;
+        border-radius: 0.3rem;
+        box-shadow: 0px 0px 10px rgba(186, 186, 186, 0.426);
+        .topic{
+            padding:1.5rem ;
+            .cr{
+                font-size: 0.5rem;
+                font-weight: 500;
+                color: #a8a7ab;
+                margin-bottom: 0.5rem;
+            }
+            h3{
+                font-size: 1rem;
+                font-weight: 300;
+                color: $DarkBlue;
+                margin-bottom: 0.5rem;
+                &:hover{
+                    color: #78dab6;
+                    cursor: pointer;
+                }
+            }
+            p{
+                font-size: 0.75rem;
+                color: $GrayishBlue;
+                line-height: 1.1rem;
+                font-weight: 400;
+            }
+        }
+
+    }
+}
+
+
+
+
+@media screen and(min-width: 1000px) {
+    .content{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        .banner{
+            position: relative;
+            width: 55%;
+            height: 90vh;
+            background-image: url(/images/bg-intro-desktop.svg);
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position:0 -16rem;
+            overflow: unset;
+            
+            img{
+                width: 100%;
+                position: absolute;
+                z-index: 1;
+                right: -9rem;
+            }
+        }
+        .content-wrapper{
+            width: 45%;
+            text-align: start;
+            padding-left: 9rem;
+            padding-bottom: unset;
+            h1{
+                font-size: 3.5rem;
+                font-weight: 300;
+                color: $DarkBlue;
+        
+            }
+            p{
+                font-size: 1.1rem;
+                color: $GrayishBlue;
+                line-height: 1.6rem;
+                padding: 1.5rem 0rem;
+                font-weight: 300;
+                margin-right: 3rem;
+            }
+            .request{
+                text-align: center;
+                margin: 1rem 0rem;
+                padding: 1rem 1.2rem;
+                width: 180px;
+                color: white;
+                font-size: 0.9rem;
+                font-weight: 500;
+                background-image: linear-gradient(to right,#33d56e, #25b9d5);
+                border-radius: 2rem;
+                &:hover{
+                    opacity: 0.9;
+                    cursor: pointer;
+                    filter: brightness(120%);
+                }
+            }
+        }
+        
+    }
+    .box1{
+        padding: 7rem 9rem 5rem;
+        text-align: center;
+        background-color: #f4f5f7;
+        .why-choose{
+            text-align: start;
+            h2{
+                font-size: 2.5rem;
+                font-weight: 300;
+                color: $DarkBlue;
+            }
+            p{
+                font-size: 1.1rem;
+                color: $GrayishBlue;
+                line-height: 1.8rem;
+                padding: 2rem 0rem;
+                font-weight: 400;
+                span{
+                    display: block;
+                }
+            }
+        }
+        .feature{
+            margin: 2rem 0rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+            .inner-box{
+                text-align: start;
+                padding: 0.5rem 0rem;
+                img{
+                    margin-bottom: 1rem;
+                }
+                .title{
+                    font-size: 1.4rem;
+                    font-weight: 300;
+                    color: $DarkBlue;
+                }
+                p{
+                    font-size: 1rem;
+                    color: $GrayishBlue;
+                    line-height: 1.6rem;
+                    padding: 2rem 0rem;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+    .article{
+        padding: 5rem 9rem;
+        text-align: start;
+        h2{
+            font-size: 2.5rem;
+            font-weight: 300;
+            color: $DarkBlue;
+            margin: 0 auto;
+        }
+        img{
+            border-top-left-radius: 0.3rem;
+            border-top-right-radius: 0.3rem;
+            width: 100%;
+        }
+        .article-wrapper{
+            margin-top: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1.5rem;
+            .article-box{
+                text-align: start;
+                margin: 2rem 0rem;
+                border-radius: 0.3rem;
+                box-shadow: 0px 0px 10px rgba(186, 186, 186, 0.426);
+                .topic{
+                    padding:1.5rem ;
+                    .cr{
+                        font-size: 0.5rem;
+                        font-weight: 500;
+                        color: #a8a7ab;
+                        margin-bottom: 0.5rem;
+                    }
+                    h3{
+                        font-size: 1rem;
+                        font-weight: 300;
+                        color: $DarkBlue;
+                        margin-bottom: 0.5rem;
+                        &:hover{
+                            color: #78dab6;
+                            cursor: pointer;
+                        }
+                    }
+                    p{
+                        font-size: 0.75rem;
+                        color: $GrayishBlue;
+                        line-height: 1.1rem;
+                        font-weight: 400;
+                    }
+                }
+        
+            }
+        }
+    }
+}
